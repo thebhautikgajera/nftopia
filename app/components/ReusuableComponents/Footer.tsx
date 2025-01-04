@@ -114,7 +114,7 @@ const Footer = () => {
         <div className="mt-2 border-t border-white pt-8 text-center ">
           <div className="flex justify-end">
             <p className="text-sm">
-              &copy; Copyrighted & Designed by <Link href="https://github.com/thebhautikgajera" className="hover:text-gray-300">The Bhautik Gajera</Link>
+              &copy; Copyrighted & Designed by <Link href="https://github.com/thebhautikgajera" className="hover:text-gray-300" target="_blank">The Bhautik Gajera</Link>
             </p>
           </div>
         </div>
