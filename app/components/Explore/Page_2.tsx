@@ -184,7 +184,6 @@ const Page_3 = () => {
               username={nft.username}
               title={nft.title}
               currentBid={nft.currentBid}
-              category={nft.category}
             />
           ))}
         </div>

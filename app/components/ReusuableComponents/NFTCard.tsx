@@ -33,15 +33,13 @@ const UserInfo: React.FC<UserInfoProps> = ({ src, alt, width, height, username }
 interface NFTDetailsProps {
   title: string;
   currentBid: string;
-  category: string;
 }
 
-const NFTDetails: React.FC<NFTDetailsProps> = ({ title, currentBid, category }) => (
+const NFTDetails: React.FC<NFTDetailsProps> = ({ title, currentBid }) => (
   <>
     <h3 className="capitalize mt-[1vw] text-[1.2vw] font-bold text-black">
       {title}
     </h3>
-    <p className="text-sm text-gray-500 mt-[.2vw]">{category}</p>
     <h3 className="capitalize mt-[.4vw] text-black/[0.51] font-bold">
       Current bids
     </h3>
@@ -67,10 +65,9 @@ interface NFTCardProps {
   username: string;
   title: string;
   currentBid: string;
-  category: string;
 }
 
-const NFTCard: React.FC<NFTCardProps> = ({ imageSrc, userImageSrc, username, title, currentBid, category }) => {
+const NFTCard: React.FC<NFTCardProps> = ({ imageSrc, userImageSrc, username, title, currentBid }) => {
   return (
     <div className="h-[31vw] w-[17vw] [box-shadow:4px_4px_4px_0px_rgba(22,22,22,0.1)] rounded-lg">
       <div className="px-[1.7vw] ">
@@ -82,7 +79,7 @@ const NFTCard: React.FC<NFTCardProps> = ({ imageSrc, userImageSrc, username, tit
           height={31}
           username={username}
         />
-        <NFTDetails title={title} currentBid={currentBid} category={category} />
+        <NFTDetails title={title} currentBid={currentBid} />
         <BidButton />
       </div>
     </div>
